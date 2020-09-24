@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: beige;
+}
+
+ul{
+    margin-left: 40px;
+}
+
+.blockquote {
+    margin-top: 10px;
+}
+
+.logo-color {
+    color: green;
+    margin-right: 5px;
+}
+
+.letter-c {
+    font-family: 'Nosifer', sans-serif;
+    size: 50%;
+    color: green;
+}
+
+.logo-text {
+    color: rgb(161, 161, 161);
+}
+
+.header {
+    padding-top: 80px;
+}
+
+.sizeh1 {
+    font-size:5vw;
+}
+
+/* .row {
+    height: 2000px;
+} */
+
+.infoSection {
+    height: auto;
+}
+
+.skills {
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: #bebebe;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.marginLeft {
+    margin-left: 40px;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 601px) {
+    .sizeh1 {
+        font-size:80px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .sizeh1 {
+        font-size:40px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .sizeh1 {
+        font-size:40px;
+    }
+
+    .fixWidth {
+        width: 100%;
+    }
+
+    .row {
+        width: 100px;
+    }
+}
+
+.carD {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+  }
+  
+  .carDs {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+
+
+  /* ABOUT PAGE */
+ .resume {
+     background-color: #ebebeb;
+     width: 100%;
+     padding: 40px;
+ }
+  
+  /* Screen larger than 600px? 2 column */
+  @media (min-width: 600px) {
+    .carDs { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .carDs { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (min-width: 600px) {
+    .carDs { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 900px) {
+    .carDs { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 365px) {
+    .fixUl {
+        font-size: 14px;
+        text-align: center;
+        margin-left: -2px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .display-4 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .lead {
+        font-size: 17px;
+    }
+
+    .jumbotron {
+        width: 308px;
+        margin-left: -15px;
+    }
+}
