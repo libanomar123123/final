@@ -8,10 +8,8 @@ body {
     background-color: #f7f7f7;
 }
 
-.navbar {
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: beige;
+.margin-right {
+    margin-right: 20px;
 }
 
 ul{
@@ -38,19 +36,43 @@ ul{
 }
 
 .header {
-    padding-top: 80px;
+    padding-top: 75px;
+}
+
+.header > .jumbotron {
+    background-image: linear-gradient(to top left, rgba(255, 166, 0, 0.685), rgba(226, 108, 65, 0.664)), 
+    url(images/undraw_code_thinking_1jeh.png); /*Open source image*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+div.card {
+    margin-top: -10px;
 }
 
 .sizeh1 {
     font-size:5vw;
 }
 
-/* .row {
-    height: 2000px;
-} */
-
 .infoSection {
     height: auto;
+}
+
+.container > .card,
+.container > .card > .rounded {
+    border-radius: 10px;
+}
+
+.author-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .skills {
@@ -60,7 +82,8 @@ ul{
 
 footer {
     width: 100%;
-    background-color: #bebebe;
+    background-color: #343a40;
+    color: #FFFFFF80;
     height: 60px;
     text-align: center;
     padding-top: 15px;
@@ -72,33 +95,6 @@ footer {
 
 .card-text {
     font-size: 16px;
-}
-
-@media screen and (min-width: 601px) {
-    .sizeh1 {
-        font-size:80px;
-    }
-  }
-  
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-    .sizeh1 {
-        font-size:40px;
-    }
-}
-
-@media screen and (max-width: 990px) {
-    .sizeh1 {
-        font-size:40px;
-    }
-
-    .fixWidth {
-        width: 100%;
-    }
-
-    .row {
-        width: 100px;
-    }
 }
 
 .carD {
@@ -115,33 +111,48 @@ footer {
     grid-gap: 1rem;
   }
 
+.box-image {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    width: 50%;
+    margin: 15px auto;
+}
 
-  /* ABOUT PAGE */
- .resume {
+.resume {
      background-color: #ebebeb;
+     border-radius: 10px;
      width: 100%;
      padding: 40px;
+     margin-top: -10px;
+     margin-bottom: -20px;
  }
   
   /* Screen larger than 600px? 2 column */
-  @media (min-width: 600px) {
-    .carDs { grid-template-columns: repeat(2, 1fr); }
-  }
+@media (min-width: 600px) {
+    .carDs { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
   
   /* Screen larger than 900px? 3 columns */
-  @media (min-width: 900px) {
-    .carDs { grid-template-columns: repeat(3, 1fr); }
-  }
+@media (min-width: 900px) {
+    .carDs { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
 
-  @media (min-width: 600px) {
-    .carDs { grid-template-columns: repeat(2, 1fr); }
-  }
+@media (min-width: 600px) {
+    .carDs { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
 
-  @media (min-width: 900px) {
-    .carDs { grid-template-columns: repeat(3, 1fr); }
-  }
+@media (min-width: 900px) {
+.carDs { grid-template-columns: repeat(3, 1fr); }
+}
 
-  @media (max-width: 365px) {
+@media (max-width: 365px) {
     .fixUl {
         font-size: 14px;
         text-align: center;
@@ -164,5 +175,38 @@ footer {
     .jumbotron {
         width: 308px;
         margin-left: -15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .sizeh1 {
+        font-size:80px;
+    }
+}
+  
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    .sizeh1 {
+        font-size:40px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .sizeh1 {
+        font-size:40px;
+    }
+
+    .fixWidth {
+        width: 100%;
+    }
+
+    .row {
+        width: 100px;
     }
 }
