@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Liban Omar">
+    <meta name="keywords" content="HTML, CSS, Bootstrap Portfolio">
+    <meta name="description" content="This is Liban's portfolio website">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
@@ -17,42 +20,47 @@
     <!-- LINKING CSS STYLESHEET -->
     <link rel="stylesheet" href="style.css">
 
-    <title>Home Page</title>
+    <title>Welcome to my portfolio | coCode</title>
     <link rel="Icon" href="images/city-solid.svg">
 </head>
 <body>
-    
-    <nav class="fixed-top navbar navbar-expand-sm navbar-dark bg-dark">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a href="index.html" class="navbar-brand">
             <em class="fas fa-city logo-color"></em></i><span class="logo-text">Co<span class="letter-c">C</span>ode</span>
         </a>
+
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ml-auto">
-                <a href="index.html" class="nav-item nav-link">HOME</a>
-                <a href="resume.html" class="nav-item nav-link">RESUME</a>
-            </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarCollapse">
+            <hr>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="margin-right nav-link" href="index.html">HOME</a>
+                </li>
+                <hr>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">RESUME</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <header class="header container">
-        <div class="container">
-            <div class="jumbotron">
-                <h1 class="display-4 sizeh1">Hello, Welcome</h1>
-                <p class="lead">This is a simple responsive website...</p>
-                <hr class="my-4">
-                <p class="card-text">Built for portfolio purposes.</p>
-                <a class="btn btn-primary btn-lg" href="resume.html" role="button">Resume</a>
-            </div>
-        </div>
+    <header class="header container">     
+        <div class="jumbotron">
+            <h1 class="display-4 sizeh1">Hello, Welcome</h1>
+            <p class="lead">This is a simple responsive website...</p>
+            <hr class="my-4">
+            <p class="card-text">Built for portfolio purposes.</p>
+            <a class="btn btn-primary btn-lg" href="resume.html" role="button">Resume</a>
+        </div>   
     </header>
 
     <main class="container">
         <div class="card mb-3">
-            <img src="images/WIN_20200902_21_55_40_Pro.jpg" class="rounded float-left card-img-top" alt="Me">
+            <img src="images/author.jpg" class="author-image float-left card-img-top" width="100%" height="auto" alt="Author photo">
             <div class="card-body">
             <h3 class="card-title">Liban Omar</h3>
             <p class="card-text">Student at saint paul college. Majoring computer programming.</p><br>
@@ -98,7 +106,7 @@
             <div class="skills tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                 <div class="carDs"><!-- CARDS -->    
                     <div class="card h-100"> <!-- START OF CARD ONE -->
-                        <img src="images/html.jpg" class="card-img-top" alt="Html">
+                        <img src="images/html.png" class="box-image card-img-top" width="50%" height="auto" alt="Html">
                         <div class="card-body">
                             <h5 class="card-title">HTML</h5>
                             <p class="card-text">I'm quite confident in programming this language. At professional level.</p>
@@ -106,7 +114,7 @@
                         </div>
                     </div> <!-- END OF CARD ONE -->
                     <div class="card h-100"> <!-- START OF CARD TWO -->
-                        <img src="images/css.png" class="card-img-top" alt="Css">
+                        <img src="images/css.png" class="box-image card-img-top" width="50%" height="auto" alt="Css">
                         <div class="card-body">
                             <h5 class="card-title">CSS</h5>
                             <p class="card-text">I am confident in programming this language, but some of the things need improvement. Like, media queries, flex-box, grid & animations. At an advanced level.</p>
@@ -114,7 +122,7 @@
                         </div>
                     </div> <!-- END OF CARD TWO -->
                     <div class="card h-100"> <!-- START OF CARD THREE -->
-                        <img src="images/sass.jpg" class="card-img-top" alt="Sass">
+                        <img src="images/sass.png" class="box-image card-img-top" width="50%" height="auto" alt="Sass">
                         <div class="card-body">
                             <h5 class="card-title">SASS</h5>
                             <p class="card-text">My confidence in programming Sass is kind of good. Needs more studying. At an intermediate level.</p>
@@ -122,7 +130,7 @@
                         </div>
                     </div> <!-- END OF CARD THREE -->
                     <div class="card h-100"> <!-- START OF CARD FOUR -->
-                        <img src="images/bootstrap.jpg" class="card-img-top" alt="Bootstrap">
+                        <img src="images/bootstrap.png" class="box-image card-img-top" width="50%" height="auto" alt="Bootstrap">
                         <div class="card-body">
                             <h5 class="card-title">BOOTSTRAP</h5>
                             <p class="card-text">My confidence as of now is at 50 50. I need to improve on grid and flex box. This is kind of memorazing and would take time. At a intermediate level</p>
@@ -130,7 +138,7 @@
                         </div>
                     </div> <!-- END OF CARD FOUR -->
                     <div class="card h-100"> <!-- START OF CARD FIVE -->
-                        <img src="images/javascript.webp" class="card-img-top" alt="JavaScript">
+                        <img src="images/javascript.png" class="box-image card-img-top" width="50%" height="auto" alt="JavaScript">
                         <div class="card-body">
                             <h5 class="card-title">JAVASCRIPT</h5>
                             <p class="card-text">I'm bigginer in this language. However, I studied how funciton, objects, arrays, loops, hoisting, scope chain & etc. As of now, I'm at bigginer level.</p>
@@ -138,7 +146,7 @@
                         </div>
                     </div> <!-- END OF CARD FIVE -->
                     <div class="card h-100"> <!-- START OF CARD SIX -->
-                        <img src="images/php.png" class="card-img-top" alt="Php">
+                        <img src="images/php.png" class="box-image card-img-top" width="50%" height="auto" alt="Php">
                         <div class="card-body">
                             <h5 class="card-title">PHP</h5>
                             <p class="card-text">I'm bigginer in this language. I used to code login forms and sign up forms with php. Now, I had forgotten it. I'm at bigginer level in this language.</p>
@@ -146,7 +154,7 @@
                         </div>
                     </div> <!-- END OF CARD SIX -->
                     <div class="card h-100"> <!-- START OF CARD SEVEN -->
-                        <img src="images/mysql.jpg" class="card-img-top" alt="MySQL">
+                        <img src="images/mysql.png" class="box-image card-img-top" width="50%" height="auto" alt="MySQL">
                         <div class="card-body">
                             <h5 class="card-title">MySQL</h5>
                             <p class="card-text">I can perform CRUD. Knowledge just needs renewing. I am intermediate in this language.</p>
@@ -154,7 +162,7 @@
                         </div>
                     </div> <!-- END OF CARD SEVEN -->
                     <div class="card h-100"> <!-- START OF CARD EIGHT -->
-                        <img src="images/java.png" class="card-img-top" alt="Java">
+                        <img src="images/java.png" class="box-image card-img-top" width="50%" height="auto" alt="Java">
                         <div class="card-body">
                             <h5 class="card-title">JAVA</h5>
                             <p class="card-text">I am taking Java course now at Saint Pual College. I'm familier with the syntax of this language. I'm at intermediate level.</p>
@@ -162,7 +170,7 @@
                         </div>
                     </div> <!-- END OF CARD EIGHT -->
                     <div class="card h-100"> <!-- START OF CARD NINE -->
-                        <img src="images/python.jpg" class="card-img-top" alt="Python">
+                        <img src="images/python.png" class="box-image card-img-top" width="50%" height="auto" alt="Python">
                         <div class="card-body">
                             <h5 class="card-title">Python</h5>
                             <p class="card-text">I am taking course at Saint Paul College now. I'm at intermediate level.</p>
